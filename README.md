@@ -1,4 +1,9 @@
 # js-labraries
+[![](https://img.shields.io/badge/language-javascript-green.svg)](https://github.com/AinolaLong/base-math)
+[![](https://img.shields.io/badge/powered-base--math-green.svg)](https://github.com/AinolaLong/base-math)
+[![](https://travis-ci.org/AinolaLong/base-math.svg?branch=master)](https://travis-ci.org/AinolaLong/base-math)
+[![](https://img.shields.io/github/license/AinolaLong/base-math.svg)](https://github.com/AinolaLong/base-math/blob/master/LICENSE)
+[![](https://img.shields.io/github/issues/AinolaLong/base-math.svg)](https://github.com/AinolaLong/base-math/issues)
 
 简单的数学方法库，旨在方便计算
 
@@ -68,13 +73,13 @@ requirejs(['node_modules/base-math/dist/base-math.js'], function (baseMath) {
 ```
 
 ## 文档
-- [API](http://git.dtwave-inc.com/cailong.lcl/base-math/blob/master/doc/api.md)
+- [API](https://github.com/AinolaLong/base-math/blob/master/doc/api.md)
 
 ## 更新日志
-- [CHANGELOG.md](http://git.dtwave-inc.com/cailong.lcl/base-math/blob/master/CHANGELOG.md)
+- [CHANGELOG.md](https://github.com/AinolaLong/base-math/blob/master/CHANGELOG.md)
 
 ## 计划列表
-- [TODO.md](http://git.dtwave-inc.com/cailong.lcl/base-math/blob/master/TODO.md)
+- [TODO.md](https://github.com/AinolaLong/base-math/blob/master/TODO.md)
 
 ## 贡献者指南
 首先安装依赖
@@ -109,7 +114,7 @@ $ npm run release
 ```
 
 ## License
-[MIT](http://git.dtwave-inc.com/cailong.lcl/base-math/blob/master/LICENSE)
+[MIT](https://github.com/AinolaLong/base-math/blob/master/LICENSE)
 
 ## keywords
 - math
