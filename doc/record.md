@@ -9,7 +9,7 @@
 - 测试用例
 - demo
 - 自动化构建，发布等
-- 
+- 规范
 
 ## 第一步 文档
 
@@ -44,9 +44,9 @@
 ### LICENSE
 开源项目必须要选择一个协议，因为没有协议的项目是没有人敢使用的，[参考这里](https://spdx.org/licenses/)，如何选择正确的正确的开源许可？[参考这里](https://blog.csdn.net/j01g58uc80251/article/details/78131010)，建议是选择MIT和BSD协议
 
-![./images/license.png]
+![](./images/license.png)
 
-### doc
+### DOC
 详细的使用文档，一份详细的文档应该：
 - 功能的详细介绍
 - 使用方法的详细介绍
