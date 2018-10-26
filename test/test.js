@@ -1,6 +1,6 @@
 const expect = require('expect.js')
 
-const baseMath = require('../dist/base-math')
+const baseMath = require('../dist/index')
 
 describe('单元测试', function() {
   describe('baseMath.plus 加法', function() {

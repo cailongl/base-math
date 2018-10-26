@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <button id="btn-run">run</button>
   <div id="mocha"></div>
 
   <script src="../../node_modules/mocha/mocha.js"></script>
@@ -17,11 +16,11 @@
   <script>
     mocha.setup('bdd')
   </script>
-  <script src="../../dist/base-math.js"></script>
+  <script src="../../dist/index.aio.js"></script>
   <script>
     var libs = {
       'expect.js': expect,
-      '../dist/base-math': baseMath,
+      '../dist/index': baseMath,
     }
     var require = function (path) {
       return libs[path]
@@ -30,9 +29,6 @@
   <script src="../test.js"></script>
   <script>
     mocha.run()
-    document.getElementById('btn-run').onclick = function() {
-      window.location.reload()
-    }
   </script>
 </body>
 

@@ -12,12 +12,13 @@
 
 | IE   | EG   | CH   | FF   | SF   | OP   | IOS  | 安卓  | Node  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----- |
-| no   | 12+  | 19+  | 16+   | 9+   | 15+  | 9+   | 4.1+ | 0.12+ |
+| no   | 12+  | 19+  | 16+   | 9+   | 15+  | 9+   | 4.1+ | 6.14+ |
 
 ## 目录介绍
 
 ```
 .
+├── config 配置
 ├── demo 使用demo
 ├── dist 编译产出代码
 ├── doc 项目文档
@@ -55,7 +56,7 @@ plus([undefined, null, 1]) // 1
 如果你是requirejs环境
 
 ```js
-requirejs(['node_modules/base-math/dist/base-math.js'], function (baseMath) {
+requirejs(['node_modules/base-math/dist/index.aio.js'], function (baseMath) {
     baseMath.plus([1,2,3]) // 6
     baseMath.plus([undefined, null, 1]) // 1
 })
@@ -64,7 +65,7 @@ requirejs(['node_modules/base-math/dist/base-math.js'], function (baseMath) {
 如果你是浏览器环境
 
 ```html
-<script src="node_modules/base-math/dist/base-math.js"></script>
+<script src="node_modules/base-math/dist/index.aio.js"></script>
 
 <script>
     baseMath.plus([1,2,3]) // 6

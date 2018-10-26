@@ -16,3 +16,6 @@ export function arrayCheck(arg, funName) {
 }
 
 
+export function test() {
+  return null
+}
