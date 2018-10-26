@@ -17,3 +17,6 @@ baseMath.plus([1,2,3,4,5,6,7,8,9,null, undefined, {}]) // get 45
 
 数组内所有`number类型`元素的求积，遇到`非number类型`或`NaN`，视为`1`处理
 
+```js
+baseMath.multiplication([1, 2, 3, null, undefined, {}, [], true, NaN, "1", "a11"])) // get 6
+```
