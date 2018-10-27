@@ -1,11 +1,11 @@
-# js-labraries
+# base-math
 [![](https://img.shields.io/badge/language-javascript-green.svg)](https://github.com/AinolaLong/base-math)
 [![](https://img.shields.io/badge/powered-base--math-green.svg)](https://github.com/AinolaLong/base-math)
 [![](https://travis-ci.org/AinolaLong/base-math.svg?branch=master)](https://travis-ci.org/AinolaLong/base-math)
 [![](https://img.shields.io/github/license/AinolaLong/base-math.svg)](https://github.com/AinolaLong/base-math/blob/master/LICENSE)
 [![](https://img.shields.io/github/issues/AinolaLong/base-math.svg)](https://github.com/AinolaLong/base-math/issues)
 
-简单的数学方法库，旨在方便计算
+简单的数学方法库，旨在方便计算（这个一个创建标准JavaScript库的demo，[如何创建?](https://github.com/AinolaLong/base-math/blob/master/doc/record.md)）
 
 ## 兼容性
 支持如下环境：
