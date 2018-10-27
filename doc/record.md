@@ -123,7 +123,16 @@ $ rollup -c
 ```
 $ rollup -c xxxx/xxx.js
 ```
-选择指定配置文件打包
+选择指定配置文件打包，贴个例子
+```js
+"scripts": {
+  "build": " npm run clean && rollup -c config/rollup.config.js && rollup -c config/rollup.config.aio.js && rollup -c config/rollup.config.esm.js",
+}
+```
+执行
+```bash
+$ npm run build
+```
 
 ## 第三步 规范
 无规矩啥也不成，特别是开源的项目，会有其他贡献者参与，长时间一起dan疼
@@ -145,3 +154,61 @@ indent_style = space
 indent_size = 2
 
 ```
+
+### 代码风格
+通过eslint来保证代码风格一致，创建`.eslintrc.js`文件，具体配置参考[`eslint API`](https://cn.eslint.org/)
+```js
+"scripts": {
+    "lint": "eslint -c .eslintrc.js src",
+  },
+```
+准备发布之前，执行 `npm run lint`来检查代码
+
+### 设计规范
+良好的编程规范对于软件的开发与维护，至关重要！他不仅可以提高代码的可读性、可靠性、有效性、健壮性，而且利于帮助开发人员开发和维护代码。
+- 命名规范
+- 注释规范
+- 函数编码规范
+- 错误处理规范
+- xxxx规范
+
+比如命名的设计规范，给出一些建议，也可参考[JavaScript编码风格](http://www.ruanyifeng.com/blog/2012/04/javascript_programming_style.html)
+- 使用可以准确说明变量、函数、原型(prototype)的完整英文描述符。严禁使用汉语拼音、不相关单词及汉字进行命名
+- 尽量少用缩写，但如果一定要使用或名称过长（不超过 25 个字母），当使用公共缩写和习惯缩写等，如实现（implement）可缩写成impl，经理（manager）可缩写成mgr等，严禁滥用缩写
+- 变量遵循驼峰命名规则
+- 类名、构造函数、公共对象实例等名称首字母大写。
+- 全局变量、常量应该全部大写；
+
+### 版本规范
+遵循开源社区通用的[`语义化版本`](https://semver.org/lang/zh-CN/)
+版本格式：主版本号.次版本号.修订号，规则如下
+- 主版本号： 当你做了不兼容的API修改
+- 次版本号： 当你做了向下兼容的功能性新增
+- 修订号： 当你做了向下兼容的问题修正
+
+### 提交commit规范
+参考一峰的博客[Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
+
+## 测试
+测试保证代码的质量，没有单元测试，修改完你有底气发布吗？？？推荐使用`Mocha`测试库，可参考[测试框架 Mocha 实例教程](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html),举个例子🌰
+```js
+var expect = require('expect.js');
+
+describe('单元测试', function() {
+    describe('功能1', function() {
+        it('相等', function() {
+            expect(1).to.equal(1);
+        });
+    });
+});
+```
+然后只需运行下面的命令，mocha会自动运行test目录下面的js文件
+```bash
+$ mocha
+```
+
+## 可持续集成
+没有可持续集成的库都是原始人，如果每次push都能够自动运行单元测试就好了，这样就省去了手动运行的繁琐，好在[travis-ci](https://www.travis-ci.org/)已经为我们提供了这个功能，使用可参考[持续集成服务 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)
+
+![](./images/travis.png)
+
