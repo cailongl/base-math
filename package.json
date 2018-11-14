@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.dtwave-inc.com:30001/cailong.lcl/base-math.git"
+    "url": "https://github.com/AinolaLong/base-math.git"
   },
   "bugs": {
     "url": "http://git.dtwave-inc.com/cailong.lcl/base-math/issues"

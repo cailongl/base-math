@@ -119,7 +119,7 @@ export default {
 ```
 $ rollup -c
 ```
-即可通过默认配置文件（rollup.config.js）所设置的信息来进行打包。也可以
+即可通过默认根目录下配置文件（rollup.config.js）所设置的信息来进行打包。也可以指定自定义的文件打包
 ```
 $ rollup -c xxxx/xxx.js
 ```
