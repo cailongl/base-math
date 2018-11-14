@@ -123,10 +123,14 @@ $ rollup -c
 ```
 $ rollup -c xxxx/xxx.js
 ```
-选择指定配置文件打包，贴个例子
+如果不想装全局的在package.json中添加script即可,比如：
 ```js
-"scripts": {
+"scripts" : {
+  "lint": "eslint -c .eslintrc.js src",
+  "clean": "rm -rf ./dist",
   "build": " npm run clean && rollup -c config/rollup.config.js && rollup -c config/rollup.config.aio.js && rollup -c config/rollup.config.esm.js",
+  "test": "npm run lint && npm run build && mocha",
+  "release": "npm test && git commit -am $npm_package-version && git tag $npm_package_version && git push && git push --tags"
 }
 ```
 执行
