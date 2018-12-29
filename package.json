@@ -1,6 +1,6 @@
 {
-  "name": "base-math-demo",
-  "version": "1.0.0",
+  "name": "base-math-demo1",
+  "version": "1.1.2",
   "description": "基础的数学计算库",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
