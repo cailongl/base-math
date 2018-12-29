@@ -1,5 +1,5 @@
 {
-  "name": "base-math",
+  "name": "base-math-demo",
   "version": "1.0.0",
   "description": "基础的数学计算库",
   "main": "dist/index.js",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "http://git.dtwave-inc.com/cailong.lcl/base-math/issues"
   },
-  "author": "cailong",
+  "author": "cailong.lcl",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.1.2",
