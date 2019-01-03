@@ -1,17 +1,19 @@
 {
   "name": "base-math-demo1",
-  "version": "1.1.16",
-  "description": "基础的数学计算库",
+  "version": "1.1.19",
+  "description": "基础的数学计算库，this is just a demo",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
   "module": "dist/index.esm.js",
   "scripts": {
+    "con": "base-math-demo1",
     "lint": "eslint -c .eslintrc.js src",
     "clean": "rm -rf ./dist",
     "build": " npm run clean && rollup -c config/rollup.config.js && rollup -c config/rollup.config.aio.js && rollup -c config/rollup.config.esm.js",
     "test": "npm run lint && npm run build && mocha",
     "release": "npm test && git commit -am $npm_package-version && git tag $npm_package_version && git push && git push --tags"
   },
+  "bin": "./shell.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/AinolaLong/base-math.git"

@@ -7,6 +7,8 @@
 
 简单的数学方法库，旨在方便计算（这个一个创建标准JavaScript库的demo，[如何创建?](https://github.com/AinolaLong/base-math/blob/master/doc/record.md)）
 
+关于`npm package.json`字段的介绍，请移步[这里](https://github.com/AinolaLong/npm-package.json)
+
 ## 兼容性
 支持如下环境：
 
